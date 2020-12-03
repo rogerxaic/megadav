@@ -13,7 +13,7 @@ docker run --name megadav -d -p 4443:4443 --env MEGA_EMAIL=myEmail@example.com -
 If you've got 2FA activated (which you should), then you need to login with a session secret:
 
 ```bash
-docker run --name megadav -d -p 4443:4443 --env MEGA_SECRET=mySecret rogermiret/megadav -p /My-Folder1 -p /My-Folder2
+docker run --name megadav -d -p 4443:4443 --env MEGA_SESSION=mySessionSecret rogermiret/megadav -p /My-Folder1 -p /My-Folder2
 ```
 
 Running `docker logs megadav` will output
